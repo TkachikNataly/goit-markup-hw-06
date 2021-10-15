@@ -243,6 +243,9 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--lite-text-color);
     border: 0;
     border-radius: 4px;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-heroy-bt:focus,
 .section-heroy-bt:hover {
@@ -433,7 +436,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--icon-color);
     align-items: center;
     justify-content: center;
-    transition-property: color;
+    transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -702,6 +705,9 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: rgba(255, 255, 255, 0.1); ;
     align-items: center;
     justify-content: center;
+    transition-property: bacground-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link:focus,
@@ -792,9 +798,13 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid var(--border-modal-button);
     background-color: var(--lite-text-color);
     color: var(--logo-color);
+    transition-property: border-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.close-button:hover {
+.close-button:focus {
+    display: block;
     border-color: var(--accent-color);
     fill: var(--accent-color);
 }
@@ -807,6 +817,9 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--title-secondary-color);
 margin-bottom: 12px;
+transition-property: fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-button .svg-modal:hover {
     fill: var(--accent-color);
@@ -881,7 +894,7 @@ margin-bottom: 4px;
     color: var(--primary-text-color);
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     margin-bottom: 30px;
 }
 .form-label-checkbox span {
@@ -905,6 +918,9 @@ margin-bottom: 4px;
 
 .modal-btn {
     display: block;
+    width: 200px;
+    height: 50px;
     padding: 10px 55px;
+    margin-bottom: 40px;
 
 }
