@@ -777,7 +777,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    height: 581px;
+    min-height: 581px;
     width: 528px;
     padding: 40px;
     background-color: var(--lite-text-color);
@@ -805,9 +805,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+.close-button:hover,
 .close-button:focus {
-    display: block;
-    border-color: var(--accent-color);
     fill: var(--accent-color);
 }
 .modal-title {
@@ -921,15 +920,20 @@ margin-bottom: 4px;
     background-color: var(--accent-color);
     border: none;
 }
+.modal-checkbox:focus + .form-label-checkbox .checkbox-link,
+.modal-checkbox:hover + .form-label-checkbox .checkbox-link {
+    border: 2px solid var(--accent-color);
+}
+.checkbox-link {
+    cursor: pointer;
+}
 .check-link {
     color: var(--accent-color);
 }
-
 .modal-btn {
     display: block;
     width: 200px;
     height: 50px;
     padding: 10px 55px;
-    margin-bottom: 40px;
 
 }
